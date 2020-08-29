@@ -1,0 +1,11 @@
+<h1>Bonjour <%= @user.first_name%> !!!</h1>
+<h3>Pour rappel voici tes informations personelles :</h3>
+
+<div>
+  <p> Ton Prénom : <%= @user.first_name%> </p>
+  <p> Ton Nom : <%= @user.last_name%> </p>
+  <p> Ton Age : <%= @user.age%> </p>
+  <p> Ton Email : <%= @user.email%> </p>
+  <p> Ta Ville : <%= @user.city.name%> (<%= @user.city.zip_code%>)</p>
+  <p> Ta description : <%= @user.description%> </p>
+</div>

@@ -1,0 +1,16 @@
+<h1>Bienvenu sur la Gossip n°<%= @gossip.id%> !!!</h1>
+<h3>Voici toutes les informations importantes à retenir :</h3>
+
+<div>
+  <p> Créateur : <%= link_to "#{@gossip.user.first_name} #{@gossip.user.last_name}", user_path(@gossip.user.id) %></p>
+  <p> Titre : <%= @gossip.title%> </p>
+  <p> Créer le : <%= @gossip.created_at%> </p>
+  <p> Modifier le : <%= @gossip.updated_at%> </p>
+
+
+  <h5> Information :</h5>
+  <p> <%= @gossip.content%> </p>
+
+  <h5> Commentaire :</h5>
+  <p>  </p>
+</div>
